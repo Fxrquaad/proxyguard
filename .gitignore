@@ -1,0 +1,15 @@
+# Ignore all python package directories
+.venv/
+.build/
+.dist/
+dist
+build
+.tox/
+*.egg-info/
+*.egg
+*.pyc
+*.pyo
+*.pyd
+*.txt
+__pycache__/
+app.py
