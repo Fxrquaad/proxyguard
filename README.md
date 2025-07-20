@@ -4,8 +4,8 @@ A Python library for managing HTTP proxies with Redis storage and smart rotation
 
 ## 📋 Prerequisites
 
-- **🗄️ Redis server** running locally or remotely
-- **🔑 Webshare.io API key** from [webshare.io](https://webshare.io)
+- **Redis server** running locally or remotely
+- **Webshare.io API key** from [webshare.io](https://webshare.io)
 
 ## 🚀 Installation
 
