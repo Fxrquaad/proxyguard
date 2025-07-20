@@ -1,19 +1,19 @@
-# ProxyGuard
+# 🛡️ ProxyGuard
 
 A Python library for managing HTTP proxies with Redis storage and smart rotation strategies.
 
-## Prerequisites
+## 📋 Prerequisites
 
-- **Redis server** running (install with `brew install redis` or `sudo apt install redis-server`)
-- **Webshare.io API key** from [webshare.io](https://webshare.io)
+- **🗄️ Redis server** running locally or remotely
+- **🔑 Webshare.io API key** from [webshare.io](https://webshare.io)
 
-## Installation
+## 🚀 Installation
 
 ```bash
-pip install redis aiohttp
+pip install proxyguard
 ```
 
-## Quick Start
+## ⚡ Quick Start
 
 ```python
 import asyncio
@@ -32,14 +32,14 @@ async def main():
     import requests
     try:
         response = requests.get("https://httpbin.org/ip", proxies=proxy)
-        guard.report_proxy(proxy, success=True)
+        guard.report_proxy(proxy, success=True)  # Report success
     except:
-        guard.report_proxy(proxy, success=False)
+        guard.report_proxy(proxy, success=False)  # Report failure
 
 asyncio.run(main())
 ```
 
-## Usage
+## 🔧 Usage
 
 ### Initialize ProxyGuard
 ```python
@@ -84,7 +84,7 @@ print(f"Success rate: {stats['overall_success_rate']}%")
 guard.update_proxies()
 ```
 
-## Redis Setup
+## 🗄️ Redis Setup
 
 **Local:**
 ```bash
